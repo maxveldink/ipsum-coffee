@@ -153,7 +153,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -164,7 +163,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-darwin-20
+  ruby
 
 DEPENDENCIES
   listen (~> 3.3)
@@ -173,7 +172,6 @@ DEPENDENCIES
   rubocop (~> 1.19.1)
   rubocop-performance (~> 1.11.5)
   rubocop-rails (~> 2.11.3)
-  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
