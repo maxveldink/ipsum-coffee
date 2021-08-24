@@ -3,6 +3,6 @@
 # Used by Render to know app is running
 class HealthController < ApplicationController
   def index
-    head :ok
+    render json: { status: "up" }
   end
 end
