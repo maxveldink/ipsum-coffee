@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get "/health", to: "health#index"
 
   namespace "api" do
-    get "/", to: "ipsum#index"
+    get "/", to: "ipsums#index"
 
-    resource :ipsum, only: [:index]
+    resources :ipsums, only: %i[index create]
   end
 end
