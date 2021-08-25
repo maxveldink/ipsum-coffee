@@ -2,9 +2,7 @@
 
 module Api
   # Controls Ipsum generation
-  class IpsumsController < ApplicationController
-    skip_before_action :verify_authenticity_token
-
+  class IpsumController < ApplicationController
     def index; end
 
     def create
