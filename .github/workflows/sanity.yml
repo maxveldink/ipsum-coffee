@@ -21,7 +21,7 @@ jobs:
           ruby-version: 3.0
 
       - name: Install Rubocop
-        run: gem install rubocop
+        run: gem install rubocop rubocop-performance rubocop-rails
 
       - name: Run Rubocop
         run: rubocop
