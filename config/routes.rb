@@ -7,7 +7,6 @@ Rails.application.routes.draw do
 
   namespace "api" do
     get "/", to: "ipsum#index"
-
-    resource :ipsum, only: [:index]
+    get "/generate", to: "ipsum#create"
   end
 end
