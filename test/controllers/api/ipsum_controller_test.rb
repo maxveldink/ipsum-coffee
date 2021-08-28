@@ -14,6 +14,6 @@ class IpsumControllerTest < ActionDispatch::IntegrationTest
     get api_generate_url
 
     assert_response :success
-    assert_equal({ "ipsum" => "Coffee aeropress hipster brew espresso." }, response.parsed_body)
+    assert_equal(25, response.parsed_body["ipsum"].split.size)
   end
 end

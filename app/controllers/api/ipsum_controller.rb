@@ -6,7 +6,7 @@ module Api
     def index; end
 
     def create
-      render json: { ipsum: "Coffee aeropress hipster brew espresso." }
+      render json: { ipsum: IpsumGenerator.new.paragraph }
     end
   end
 end
