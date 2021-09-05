@@ -10,6 +10,8 @@ gem "rails", "~> 6.1.4", ">= 6.1.4.1"
 # Use Puma as the app server
 gem "puma", "~> 5.0"
 
+gem "tailwindcss-rails", "~> 0.4.3"
+
 group :development, :test do
   gem "rubocop", "~> 1.19.1", require: false
   gem "rubocop-performance", "~> 1.11.5", require: false

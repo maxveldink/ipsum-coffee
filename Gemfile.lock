@@ -159,6 +159,8 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    tailwindcss-rails (0.4.3)
+      rails (>= 6.0.0)
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -180,6 +182,7 @@ DEPENDENCIES
   rubocop (~> 1.19.1)
   rubocop-performance (~> 1.11.5)
   rubocop-rails (~> 2.11.3)
+  tailwindcss-rails (~> 0.4.3)
   tzinfo-data
 
 RUBY VERSION
