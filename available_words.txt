@@ -9,3 +9,17 @@ grind
 ground
 whole
 bean
+sumatra
+ethiopian
+yirgacheffe
+hot
+iced
+venti
+grande
+tall
+almond
+oat
+coconut
+milk
+frappe
+cream
