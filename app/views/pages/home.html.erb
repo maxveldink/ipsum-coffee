@@ -1,2 +1,22 @@
-<h1>Ipsum Coffee</h1>
-<p>For the perky.</p>
+<div class="container mx-auto text-center text-white flex flex-col justify-between min-h-screen">
+  <header class="my-4">
+    <h1 class="text-5xl mb-4">Ipsum.coffee</h1>
+    <p class="text-2xl">A perky lorem ipsum generator* for the well-caffeinated.</p>
+    <p class="text-sm">* with an API</p>
+  </header>
+
+  <div>
+    <label>
+      We brewed some fresh ipsum for you:
+      <br />
+      <br />
+      <textarea class="text-black" cols="50" rows="10" readonly><%= @initial_ipsum %></textarea>
+    </label>
+  </div>
+
+  <footer class="py-4">
+    <p>
+      Brewed with 💙 by <a class="transition hover:underline" href="https://www.audaciousaardvark.com">Audacious Aardvark</a> in Middle Tennessee.
+    </p>
+  </footer>
+</div>

@@ -2,5 +2,7 @@
 
 # Serves simple pages
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @initial_ipsum = IpsumGenerator.new.paragraph
+  end
 end
