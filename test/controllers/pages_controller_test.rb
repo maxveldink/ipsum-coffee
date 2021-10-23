@@ -7,6 +7,6 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     get root_url
 
     assert_response :success
-    assert_match("Ipsum Coffee", response.body)
+    assert_match("Ipsum.coffee", response.body)
   end
 end
