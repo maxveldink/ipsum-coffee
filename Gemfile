@@ -12,6 +12,8 @@ gem "puma", "~> 5.0"
 
 gem "tailwindcss-rails", "~> 0.4.3"
 
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 group :development, :test do
   gem "rubocop", "~> 1.19.1", require: false
   gem "rubocop-performance", "~> 1.11.5", require: false
