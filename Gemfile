@@ -10,6 +10,9 @@ gem "rails", "~> 6.1.4", ">= 6.1.4.1"
 # Use Puma as the app server
 gem "puma", "~> 5.0"
 
+gem "importmap-rails", "~> 0.8.1"
+gem "stimulus-rails", "~> 0.7.1"
+
 gem "tailwindcss-rails", "~> 0.4.3"
 
 group :development, :test do
