@@ -1,9 +1,9 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["ipsum"]
+  static targets = ["currentIpsum"]
 
-  async newIpsum() {
+  async refresh() {
     try {
       const res = await fetch("/api/generate")
 
@@ -13,9 +13,13 @@ export default class extends Controller {
 
       const body = await res.json()
 
-      this.ipsumTarget.innerText = body.ipsum
+      this.currentIpsumTarget.innerText = body.ipsum
     } catch (error) {
       console.error(error)
     }
+  }
+
+  async copy() {
+    await navigator.clipboard.writeText(this.currentIpsumTarget.textContent)
   }
 }

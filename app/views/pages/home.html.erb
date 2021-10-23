@@ -5,19 +5,27 @@
     <p class="text-sm">* with an API</p>
   </header>
 
-  <div class="flex flex-col" data-controller="refresh">
+  <div class="flex flex-col" data-controller="ipsum">
     <label>
       We brewed some fresh ipsum for you:
       <br />
       <br />
-      <textarea data-refresh-target="ipsum" class="text-black" cols="50" rows="10" readonly><%= @initial_ipsum %></textarea>
+      <textarea data-ipsum-target="currentIpsum" data-clipboard-target="ipsum" class="text-black" cols="50" rows="10" readonly><%= @initial_ipsum %></textarea>
     </label>
-    <%= button_tag(
-      "Pour me another", 
-      class: "flex-initial p-4 bg-yellow-400 text-black border rounded",
-      data: {
-        action: "refresh#newIpsum"
+    <div class="flex justify-center">
+      <%= button_tag(
+        "Pour me another", 
+        class: "flex-initial p-4 mr-4 bg-yellow-400 text-black border rounded",
+        data: {
+          action: "ipsum#refresh"
       }) %>
+      <%= button_tag(
+        "Copy that brew", 
+        class: "flex-initial p-4 bg-yellow-400 text-black border rounded",
+        data: {
+          action: "ipsum#copy"
+        }) %>
+    </div>
   </div>
 
   <footer class="py-4 flex justify-center items-center">
