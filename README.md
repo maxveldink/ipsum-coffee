@@ -1,24 +1,20 @@
-# README
+# Ipsum Coffee
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A small side project, built on the Audacious Aardvark Coding live stream, that generates coffee-themed lorem ipsum and features an API. Over-engineered with love to try out new Rails and Ruby features.
 
-Things you may want to cover:
+## Development
 
-* Ruby version
+Check out the `.tool-versions` file for required versions of Ruby and install it on your system.
 
-* System dependencies
+Once installed, run `bundle install` to pull in Ruby dependencies. Tests can be run with `bundle exec rails test` and the local server can be started with `bundle exec rails serve`.
 
-* Configuration
+## Contributing
 
-* Database creation
+Feel free to add GH issues and potentially we can talk about them on the live stream or I'll implement them in my spare time!
 
-* Database initialization
+## Sponsoring
 
-* How to run the test suite
+If you enjoy coffee-flavored Ipsum, or enjoy coding along with me, there are two sponsorship options.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- [Ko-fi](https://ko-fi.com/audaciousaardvark)
+- [GitHub Sponsors](https://github.com/sponsors/AudaciousAardvark)
