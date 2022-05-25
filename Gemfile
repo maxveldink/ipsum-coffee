@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.1"
+ruby "3.1.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem "rails", "~> 6.1.4", ">= 6.1.4.1"
@@ -16,9 +16,9 @@ gem "stimulus-rails", "~> 0.7.1"
 gem "tailwindcss-rails", "~> 0.4.3"
 
 group :development, :test do
-  gem "rubocop", "~> 1.19.1", require: false
-  gem "rubocop-performance", "~> 1.11.5", require: false
-  gem "rubocop-rails", "~> 2.11.3", require: false
+  gem "rubocop", "~> 1.29", require: false
+  gem "rubocop-performance", "~> 1.14", require: false
+  gem "rubocop-rails", "~> 2.14", require: false
 end
 
 group :development do
