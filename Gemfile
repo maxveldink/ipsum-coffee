@@ -5,15 +5,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem "rails", "~> 6.1.4", ">= 6.1.4.1"
-# Use Puma as the app server
+gem "rails", "~> 7.0.3"
 gem "puma", "~> 5.0"
+gem "propshaft", "~> 0.6.4"
 
-gem "importmap-rails", "~> 0.8.1"
-gem "stimulus-rails", "~> 0.7.1"
-
-gem "tailwindcss-rails", "~> 0.4.3"
+gem "importmap-rails", "~> 1.1.2"
+gem "stimulus-rails", "~> 1.0.4"
+gem "tailwindcss-rails", "~> 2.0.10"
 
 group :development, :test do
   gem "rubocop", "~> 1.29", require: false
