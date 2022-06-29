@@ -5,13 +5,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
-gem "rails", "~> 7.0.3"
-gem "puma", "~> 5.0"
 gem "propshaft", "~> 0.6.4"
+gem "puma", "~> 5.0"
+gem "rails", "~> 7.0.3"
 
 gem "importmap-rails", "~> 1.1.2"
 gem "stimulus-rails", "~> 1.0.4"
 gem "tailwindcss-rails", "~> 2.0.10"
+
+gem "sorbet-static-and-runtime", "0.5.10127"
 
 group :development, :test do
   gem "rubocop", "~> 1.29", require: false
@@ -21,6 +23,8 @@ end
 
 group :development do
   gem "listen", "~> 3.3"
+
+  gem "tapioca", "~> 0.8.3", require: false
 end
 
 group :test do
