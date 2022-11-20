@@ -7,7 +7,7 @@ class IpsumGenerator
 
   sig { void }
   def initialize
-    available_words = File.read(Rails.root.join("available_words.txt")).split("\n")
+    available_words = Rails.root.join("available_words.txt").read.split("\n")
     @available_words = T.let(available_words, T::Array[String])
   end
 

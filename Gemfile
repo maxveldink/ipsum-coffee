@@ -13,20 +13,23 @@ gem "importmap-rails", "~> 1.1.2"
 gem "stimulus-rails", "~> 1.0.4"
 gem "tailwindcss-rails", "~> 2.0.10"
 
-gem "sorbet-runtime", "0.5.10127"
-
-group :development, :test do
-  gem "rubocop", "~> 1.29", require: false
-  gem "rubocop-performance", "~> 1.14", require: false
-  gem "rubocop-rails", "~> 2.14", require: false
-
-  gem "sorbet", "0.5.10127"
-end
+gem "sorbet-runtime"
 
 group :development do
   gem "listen", "~> 3.3"
 
+  gem "bundler-leak", require: false
+  gem "rubocop", "~> 1.29", require: false
+  gem "rubocop-minitest", require: false
+  gem "rubocop-performance", "~> 1.14", require: false
+  gem "rubocop-rails", "~> 2.14", require: false
+  gem "rubocop-sorbet", require: false
+
+  gem "sorbet"
+
   gem "tapioca", "~> 0.8.3", require: false
+
+  gem "ruby-lsp"
 end
 
 group :test do
