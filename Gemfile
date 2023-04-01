@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.0"
+ruby "3.2.2"
 
 gem "propshaft"
 gem "puma"
@@ -31,8 +31,6 @@ group :development do
   gem "sorbet"
 
   gem "tapioca", require: false
-
-  gem "ruby-lsp"
 end
 
 group :test do

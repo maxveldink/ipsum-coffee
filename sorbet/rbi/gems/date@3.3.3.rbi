@@ -18,9 +18,6 @@ class Date
   def infinite?; end
 end
 
-# source://activesupport/7.0.4/lib/active_support/core_ext/date/conversions.rb#9
-Date::DATE_FORMATS = T.let(T.unsafe(nil), Hash)
-
 class Date::Infinity < ::Numeric
   # @return [Infinity] a new instance of Infinity
   #
