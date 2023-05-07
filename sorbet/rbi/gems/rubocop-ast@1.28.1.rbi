@@ -5449,6 +5449,9 @@ RuboCop::AST::NodePattern::Sets::SET_TRY_TRY = T.let(T.unsafe(nil), Set)
 RuboCop::AST::NodePattern::Sets::SET_TYPE_TEMPLATE_TYPE_MEMBER = T.let(T.unsafe(nil), Set)
 
 # source://rubocop-ast//lib/rubocop/ast/node_pattern/sets.rb#10
+RuboCop::AST::NodePattern::Sets::SET_T_TRANSLATE_L_LOCALIZE = T.let(T.unsafe(nil), Set)
+
+# source://rubocop-ast//lib/rubocop/ast/node_pattern/sets.rb#10
 RuboCop::AST::NodePattern::Sets::SET_ZERO_POSITIVE_NEGATIVE = T.let(T.unsafe(nil), Set)
 
 # source://rubocop-ast//lib/rubocop/ast/node_pattern/sets.rb#10

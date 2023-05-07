@@ -29,7 +29,6 @@ group :development do
   gem "rubocop-sorbet", require: false
 
   gem "sorbet"
-
   gem "tapioca", require: false
 end
 
