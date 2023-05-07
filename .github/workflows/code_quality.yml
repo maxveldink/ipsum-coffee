@@ -1,50 +1,41 @@
----
-
-name: Sanity
-
 on:
   pull_request:
     types: [ opened, reopened, synchronize ]
 
 jobs:
   rubocop:
-    name: Ruby Linting
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-
       - name: Set up ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
-
-      - name: Install Rubocop
-        run: gem install rubocop rubocop-performance rubocop-rails
-
-      - name: Run Rubocop
-        run: rubocop
+      - run: bin/rubocop
 
   tests:
-    name: Ruby Testing
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
-
       - name: Set up ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
+      - run: bin/rails test
 
-      - name: Install gems
-        run: |
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
-
-      - name: Run Rubocop
-        run: bundle exec rails test
+  sorbet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Set up ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+      - run: bin/tapioca gem --verify; bin/tapioca dsl --verify
+      - run: bundle exec srb tc
